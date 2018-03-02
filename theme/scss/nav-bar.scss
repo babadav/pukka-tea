@@ -4,12 +4,16 @@ nav{
 
 	.logo{
 		width: 8%;
+		max-width: 100px;
 		margin-right: 2%;
 		position: relative;
 	    z-index: 1;
 	}
 
 	.hamburger{
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
 		margin-right: 2%;
 		position: relative;
 		z-index: 1;
@@ -35,7 +39,12 @@ nav{
 		transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 
 		.nav-item{
-			width: 14%;
+			width: 25%;
+		}
+
+		.our-mission , .our-life-style{
+		    position: relative;
+		    top: -170px;
 		}
 	}
 

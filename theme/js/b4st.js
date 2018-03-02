@@ -44,16 +44,17 @@
 				}
 				shuffleArray(lines);
 
-				TweenMax.staggerFrom(lines, .2, {
+				TweenMax.staggerFrom(lines, 2, {
 				    drawSVG: "0 100"
 				    // stroke:"white", 
 				    // strokeWidth:6,
-				}, .02);
+				}, .005);
 				//# sourceMappingURL=app.js.map
 			}
 
+			console.log("test")
 			TweenMax.to( $('.loading-screen') , 2 , {
-				delay: 2.7,
+				delay: 3,
 				opacity: .5,
 				top: '-100%'
 			})
