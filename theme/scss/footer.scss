@@ -1,0 +1,28 @@
+
+.footer{
+    width: 100%;
+    background-color: RGBA(151, 132, 63, 1.00) !important;
+    padding-bottom: 31px;
+    padding-top: 31px;
+
+    .footer-links{
+	    width: 100%;
+	    display: flex;
+	    justify-content: space-between;
+
+	    li{
+	    	list-style-type: none;
+	    	color: RGBA(246, 234, 204, 1.00);
+	    	border-right: 2px solid;
+		    padding-right: 15px;
+	    }
+
+	    .no-border-right{
+	    	border-right: unset;
+	    }
+    }
+
+    p{
+    	color: RGBA(246, 234, 204, 1.00);
+    }
+}

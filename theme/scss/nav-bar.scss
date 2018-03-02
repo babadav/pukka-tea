@@ -1,0 +1,49 @@
+nav{
+	    display: flex;
+	    justify-content: space-between;
+
+	.logo{
+		width: 8%;
+		margin-right: 2%;
+		position: relative;
+	    z-index: 1;
+	}
+
+	.hamburger{
+		margin-right: 2%;
+		position: relative;
+		z-index: 1;
+		.bar{
+			width: 40px;
+			height: 10px;
+			background-color: white;
+			margin-bottom: 5px;
+		}
+	}
+
+	.nav-inner{
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: space-around;
+		position: absolute;
+		background-image: url(../../theme/img/nav-bg.jpg);
+		background-size: cover;
+		top: -100%;
+		transition: all .8s;
+		transition-timing-function: ease-in-out;
+		transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+
+		.nav-item{
+			width: 14%;
+		}
+	}
+
+	.nav-active{
+		top: 0;
+	}
+}
+
+.cls-2{
+	fill: rgb(245,233,203);
+}

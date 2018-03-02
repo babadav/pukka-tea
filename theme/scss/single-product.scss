@@ -1,0 +1,22 @@
+body.single-product {
+
+	.mb-4{
+		text-align: center;
+	}
+
+	.woocommerce-product-gallery__wrapper{
+		width: 60%;
+		display: flex;
+	    justify-content: flex-end;
+	    margin: 0 auto;
+	}
+
+	  .woocommerce-product-gallery--with-images{
+	    	display: flex;
+		    justify-content: flex-end;
+	    }
+
+	    .woocommerce-product-gallery__image{
+	    	width: 300px;
+	    }
+}
