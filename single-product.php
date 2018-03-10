@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-single product!
+
 
 <div class="container-responsive mt-5">
   <div class="row">

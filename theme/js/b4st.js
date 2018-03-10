@@ -109,67 +109,66 @@
 			})
 
 		}
+
+		function countUpAnimations(){
+
+			var million = document.querySelector('.million');
+			var million2 = document.querySelector('.million-2');
+			var million3 = document.querySelector('.million-3');
+
+		
+
+				var options = {
+				  useEasing: false, 
+				  useGrouping: false, 
+				  separator: ',', 
+				  decimal: '.', 
+			};
+			var demo = new CountUp(million, 0, 386, 0, 2.5, options);
+			if (!demo.error) {
+			  demo.start();
+			} else {
+			  console.error(demo.error);
+			}
+
+			var demo = new CountUp(million2, 0, 11.5,1, 0, 2.5, options);
+			if (!demo.error) {
+			  demo.start();
+			} else {
+			  console.error(demo.error);
+			}
+
+			var demo = new CountUp(million3, 0, 165, 0, 2.5, options);
+			if (!demo.error) {
+			  demo.start();
+			} else {
+			  console.error(demo.error);
+			}
+		}
 		
 		onLoadScreen();
 		navBar();
-		homePageSliderButtons()
+		homePageSliderButtons();
+		countUpAnimations();
 	});
+
+			
+
+		
 
 }(jQuery));
 
 
+// var teaBag = $('.our-mission');
 
+// TweenMax.fromTo(teaBag , .8,  {
+// 	delay: 5,
+// 	top: '-100%',
+// 	repeat: -1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var lines = $(".path");
-
-// 			lines = [].slice.call(lines); // hack to convert NodeList (what querySelectorAll returns) to an array (which can be shuffled)
-
-// 		function shuffleArray(array) {
-// 		    for (var i = array.length - 1; i > 0; i--) {
-// 		        var j = Math.floor(Math.random() * (i + 1));
-// 		        var _ref = [array[j], array[i]];
-// 		        array[i] = _ref[0];
-// 		        array[j] = _ref[1];
-// 		    }
-// 		}
-
-// 		shuffleArray(lines);
-
-// 		TweenMax.staggerFrom(lines, 1, {
-// 		    drawSVG: "0%"
-// 		    // stroke:"white", 
-// 		    // strokeWidth:6,
-// 		}, 0.002);
-// 		//# sourceMappingURL=app.js.map
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// },
+// {
+// 	top: '0%',
+// 	repeat: -1
+// })
 

@@ -43,8 +43,10 @@ if ( post_password_required() ) {
 		 */
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
+	
 
 	<div class="summary entry-summary">
+		
 		<?php
 			/**
 			 * Hook: Woocommerce_single_product_summary.
@@ -58,8 +60,38 @@ if ( post_password_required() ) {
 			 * @hooked woocommerce_template_single_sharing - 50
 			 * @hooked WC_Structured_Data::generate_product_data() - 60
 			 */
+
+			function ingredients_custom_hook() {
+				?>
+				<div class="key-ingredients-wrap">
+					<div class="ingredient">
+						<?php the_field('ingredient1');?>
+					</div>
+					<div class="ingredient">
+						<?php the_field('ingredient2');?>
+					</div>
+					<div class="ingredient">
+						<?php the_field('ingredient3');?>
+					</div>
+					<div class="ingredient">
+						<?php the_field('ingredient4');?>
+					</div>
+					<div class="ingredient">
+						<?php the_field('ingredient5');?>
+					</div>
+					<div class="ingredient">
+						<?php the_field('ingredient6');?>
+					</div>
+				</div>
+				<?php
+			}
+
+			add_action('woocommerce_single_product_summary', 'ingredients_custom_hook', 5);
+
+			do_action( 'woocommerce_after_single_product_summary' );
 			do_action( 'woocommerce_single_product_summary' );
 		?>
+
 	</div>
 
 	<?php
@@ -70,8 +102,10 @@ if ( post_password_required() ) {
 		 * @hooked woocommerce_upsell_display - 15
 		 * @hooked woocommerce_output_related_products - 20
 		 */
-		do_action( 'woocommerce_after_single_product_summary' );
+		
 	?>
-</div>
 
-<?php do_action( 'woocommerce_after_single_product' ); ?>
+
+</div>
+<!-- 
+<?php do_action( 'woocommerce_after_single_product' ); ?> -->

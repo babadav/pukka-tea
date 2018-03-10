@@ -1,4 +1,6 @@
-nav{
+nav{	
+		width: 98%;
+		margin: 0 auto;
 	    display: flex;
 	    justify-content: space-between;
 
@@ -7,16 +9,17 @@ nav{
 		max-width: 100px;
 		margin-right: 2%;
 		position: relative;
-	    z-index: 1;
+	    z-index: 2;
 	}
 
 	.hamburger{
+		width: 7%;
 	    display: flex;
 	    flex-direction: column;
 	    justify-content: center;
 		margin-right: 2%;
 		position: relative;
-		z-index: 1;
+		z-index: 2;
 		.bar{
 			width: 40px;
 			height: 10px;
@@ -37,14 +40,26 @@ nav{
 		transition: all .8s;
 		transition-timing-function: ease-in-out;
 		transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+		z-index: 1;
+		left: 0;
 
 		.nav-item{
-			width: 25%;
+			width: 20%;
 		}
 
-		.our-mission , .our-life-style{
-		    position: relative;
-		    top: -170px;
+		.our-mission , .our-life-style, .our-products{
+		    position: absolute;
+		  
+		}
+
+		.our-mission{
+			left: 10%;
+			top: -21%;
+		}
+
+		.our-products{
+			right: 10%;
+			top: -21%;
 		}
 	}
 
@@ -55,4 +70,30 @@ nav{
 
 .cls-2{
 	fill: rgb(245,233,203);
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+	nav{
+		.logo, .hamburger{
+			width: 18%;
+		}
+
+		.nav-inner{
+			.nav-item{
+				width: 30%;
+			}
+
+			.our-mission, .our-life-style{
+				top: -90px;
+			}
+
+			.our-products{
+				top: 10%;
+				position: relative;
+			}
+		}
+	}
 }
